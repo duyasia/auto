@@ -42,7 +42,7 @@ sudo dpkg -i containerd.io.deb && sudo dpkg -i docker-ce-cli.deb && sudo dpkg -i
 echo "=================================================="
 
 echo "\e[1m\e[32m4. Install Docker Compose... \e[0m" && sleep 1
-sudo apt-get update && sudo apt-get install libffi-dev libssl-dev && sudo apt install python3-dev && sudo apt-get install -y python3 python3-pip && sudo pip3 install docker-compose
+sudo apt-get update && sudo apt-get install libffi-dev libssl-dev && sudo apt install -y python3-dev && sudo apt-get install -y python3 python3-pip && sudo pip3 install docker-compose
 
 echo "=================================================="
 
