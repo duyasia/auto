@@ -13,28 +13,25 @@ echo "    \  \::/      \  \:\/:/        \  \:\   \  \:\        \__\/ /:/       /
 echo "     \__\/        \  \::/          \__\/    \  \:\         /__/:/        \__\/      \  \:\     ";
 echo "                   \__\/                     \__\/         \__\/                     \__\/     ";
 echo "";
-echo "                               Install Docker on Raspber Pi4 ";
-echo "                                      https://duy.asia ";
+echo "                      Install Docker and Portainer on Raspber Pi4 ";
+echo "                                   https://duy.asia ";
 echo "\e[0m"
 echo "=================================================="
 
 sleep 2
 
 echo "\e[1m\e[32m1. Update and Upgrade... \e[0m" && sleep 1
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt install git- -y
 
 echo "=================================================="
 
 echo "\e[1m\e[32m2. Install Docker... \e[0m" && sleep 1
-sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh 
 
 echo "=================================================="
 
-echo "\e[1m\e[32m3. Install Docker Engine... \e[0m" && sleep 1
-sudo apt-get update
-sudo dpkg -i containerd.io.deb && sudo dpkg -i docker-ce-cli.deb && sudo dpkg -i docker-ce.deb
+echo "\e[1m\e[32m3. Test Docker... \e[0m" && sleep 1
+docker version
 
 echo "=================================================="
 
