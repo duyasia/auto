@@ -21,7 +21,7 @@ echo "=================================================="
 sleep 2
 
 echo "\e[1m\e[32m1. Update and Upgrade... \e[0m" && sleep 1
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt install git- -y
+sudo apt-get update && sudo apt-get upgrade -y
 
 echo "=================================================="
 
