@@ -34,9 +34,6 @@ echo "=================================================="
 
 echo "\e[1m\e[32m3. Install Docker Engine... \e[0m" && sleep 1
 sudo apt-get update
-wget https://raw.githubusercontent.com/duyasia/docker-pi4/main/containerd.io.deb
-wget https://raw.githubusercontent.com/duyasia/docker-pi4/main/docker-ce-cli.deb
-wget https://raw.githubusercontent.com/duyasia/docker-pi4/main/docker-ce.deb
 sudo dpkg -i containerd.io.deb && sudo dpkg -i docker-ce-cli.deb && sudo dpkg -i docker-ce.deb
 
 echo "=================================================="
