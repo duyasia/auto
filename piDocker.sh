@@ -13,7 +13,7 @@ echo "    \  \::/      \  \:\/:/        \  \:\   \  \:\        \__\/ /:/       /
 echo "     \__\/        \  \::/          \__\/    \  \:\         /__/:/        \__\/      \  \:\     ";
 echo "                   \__\/                     \__\/         \__\/                     \__\/     ";
 echo "";
-echo "                      Install Docker and Portainer on Raspber Pi4 ";
+echo "                      Install Docker on Raspber Pi 4 ";
 echo "                                   https://duy.asia ";
 echo "\e[0m"
 echo "=================================================="
