@@ -36,7 +36,7 @@ docker version
 echo "=================================================="
 
 echo "\e[1m\e[32m4. Install Docker Compose... \e[0m" && sleep 1
-sudo apt-get update && sudo apt-get install libffi-dev libssl-dev && sudo apt install -y python3-dev && sudo apt-get install -y python3 python3-pip && sudo pip3 install docker-compose
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py && sudo apt-get install -y python3 python3-pip && sudo pip3 install docker-compose
 
 echo "=================================================="
 
